@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  .base-btn {
+    @apply px-4 py-3 text-sm font-semibold rounded-md select-none ring-primary ring-offset-2 focus-visible:outline-none focus-visible:ring-2 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .base-btn-primary {
+    @apply text-white bg-primary enabled:active:bg-primary-active enabled:hover:bg-primary-hover;
+  }
+
+  .base-btn-text {
+    @apply text-sm font-semibold rounded-md ring-primary ring-offset-2 focus-visible:outline-none focus-visible:ring-2;
+  }
+
+  .base-btn-text-primary {
+    @apply text-primary active:text-primary-active hover:text-primary-hover;
+  }
+
+  .base-input {
+    @apply bg-white p-2 border border-[#757575] rounded-md ring-primary ring-offset-2 focus-visible:outline-none focus-visible:ring-2 hover:border-primary placeholder:text-[#616161] select-none;
+  }
+}
