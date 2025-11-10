@@ -1129,3 +1129,13 @@ AEM_START_OPTS="server-start -c /aem/crx-quickstart -i launchpad -p 8080 -a 0.0.
 ### <?php echo getenv('Foo'); ?> would produce: 'some value'
 ###
 #Foo=some value
+
+###
+### OpenLDAP Configuraion
+###
+LDAP_ADMIN_USERNAME=admin
+LDAP_ADMIN_PASSWORD=adminpassword
+LDAP_USERS=customuser
+LDAP_PASSWORDS=custompassword
+LDAP_ROOT=dc=aldi-backup,dc=local
+LDAP_ADMIN_DN=cn=admin,dc=aldi-backup,dc=local
