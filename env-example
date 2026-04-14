@@ -1111,6 +1111,22 @@ AEM_START_OPTS="server-start -c /aem/crx-quickstart -i launchpad -p 8080 -a 0.0.
 
 ################################################################################
 ###
+### Keycloak SSO
+###
+################################################################################
+
+KC_BOOTSTRAP_ADMIN_USERNAME=admin
+KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+KC_DB=postgres
+KC_DB_URL_HOST=pgsql
+KC_DB_URL_PORT=5432
+KC_DB_URL_DATABASE=db-keycloak2
+KC_DB_USERNAME=postgres
+KC_DB_PASSWORD=
+
+
+################################################################################
+###
 ### XX. Custom variables
 ###
 ################################################################################
